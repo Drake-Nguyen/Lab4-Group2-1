@@ -23,11 +23,22 @@ Class LA{
 
 
 //Syntax Analyzer Functions
-Class SA {
+Class SynA {
 public:
 char get_token_stream(string)
 int convert_to_syntax_tree(char)
 char return_syntax_tree(string)
+
+private:
+
+}
+
+//Semantic Anylzer Functions
+Class SemA {
+public:
+char type_checking(string)
+char label_checking(string)
+flow_control(string)
 
 private:
 
