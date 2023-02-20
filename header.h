@@ -10,11 +10,27 @@
 #ifndef HEADER_H_
 #define HEADER_H_
 
+//Lexica Anaylzer Functions
+Class LA{
+    public:
+        LexicalAnalyzer(string);
+        Tokenizer(string);
+
+    private:
+    string input_string(string);
+    char current_char(char);
+}
+
 
 //Syntax Analyzer Functions
+Class SA {
+public:
 char get_token_stream(string)
 int convert_to_syntax_tree(char)
 char return_syntax_tree(string)
 
+private:
+
+}
 
 #endif
