@@ -11,7 +11,7 @@
 #define HEADER_H_
 
 //Lexica Anaylzer Functions
-Class LA{
+Class LA {
     public:
         LexicalAnalyzer(string);
         Tokenizer(string);
