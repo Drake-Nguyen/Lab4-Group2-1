@@ -44,3 +44,18 @@
 *
 * * (c) Copyright/license info 
 **/
+
+#include "iostream"
+#include "vector"
+#include "header.h"
+
+
+class SA : public LA
+{
+private:
+    std::vector<std::string> symbolTable;
+public:
+   virtual void variableEntry();
+   virtual void assignmentStatement();
+};
+
