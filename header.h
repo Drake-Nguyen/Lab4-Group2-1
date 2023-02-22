@@ -11,34 +11,37 @@
 #define HEADER_H_
 
 //Lexica Anaylzer Functions
-Class LA {
+class LA {
     public:
-        LexicalAnalyzer(string);
-        Tokenizer(string);
+        LexicalAnalyzer();
+        string Tokenizer(string);
 
     private:
-    string input_string(string);
-    char current_char(char);
-}
+    string input_string;
+    char current_char;
+};
 
 
 //Syntax Analyzer Functions
-Class SynA {
+class SynA {
 public:
-char get_token_stream(string)
-int convert_to_syntax_tree(char)
-char return_syntax_tree(string)
-
+    string token_string;
 private:
 
-}
+};
+
+char get_token_stream(string);
+char convert_to_syntax_tree(char);
+char get_token(string);
+char convert_to_syntax_tree(char);
+
 
 //Semantic Anylzer Functions
-Class SemA {
+class SemA {
 public:
-char type_checking(string)
-char label_checking(string)
-flow_control(string)
+char type_checking(string);
+char label_checking(string);
+int flow_control(string);
 
 private:
 
