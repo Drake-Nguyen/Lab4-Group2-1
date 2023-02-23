@@ -4,15 +4,11 @@
 * Last Updated by: Kyle Dang
 * Contact information: nathannn702@gmail.com, dangkyle@csu.fullerton.edu
 * Purpose of this file - Syntax Analyzer that prases through and identify tokens and output a syntax tree
-* Description of Classes, Functions, etc. in the file.
-
-*public variable token_string; will be used to store the token string value from the get_token_stream function
-*public variable syntax_tree; will be used to store the result syntax tree to be returned 
-
-*char get_token_stream(string) - will take the value of token stream from lexical.cpp 
-*int convert to syntax_tree(char) - will convert the token stream value stored into a syntax tree 
-*char return_syntax_tree(string) - returns the syntax tree back to where function was called for use
-
+* public variable token_string; will be used to store the token string value from the get_token_stream function
+* public variable syntax_tree; will be used to store the result syntax tree to be returned 
+* char get_token_stream(string) - will take the value of token stream from lexical.cpp 
+* int convert to syntax_tree(char) - will convert the token stream value stored into a syntax tree 
+* char return_syntax_tree(string) - returns the syntax tree back to where function was called for use
 * (c) Copyright/license info
 **/ 
 
@@ -25,7 +21,7 @@ class SynA {
         std::string token_string;
 
     private:
-
+    
 };
 
 //Prototypes 
@@ -33,7 +29,7 @@ char get_token_stream(std::string token_string);
 char convert_to_syntax_tree(char token);
 
 // takes token_stream from lexical.cpp and stores in variable 
-char get_token(std::string token_string) {
+char get_token_stream(std::string token_string) {
 
     char token = 'a';
     return token;
